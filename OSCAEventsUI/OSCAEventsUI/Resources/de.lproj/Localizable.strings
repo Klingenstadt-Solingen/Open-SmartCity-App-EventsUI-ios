@@ -1,0 +1,100 @@
+/*
+  Localizable.strings
+  OSCAEventsUI
+  language: de
+  Created by Stephan Breidenbach on 11.02.22.
+  
+*/
+
+// MARK: - Shared
+
+// The title to confirm action
+"events_confirm_title" = "Ja";
+// The title to reject action
+"events_reject_title" = "Nein";
+// The title for error
+"events_error_title" = "Veranstaltungen konnten nicht geladen werden";
+// Time of day
+"events_time_of_day %@" = "%@ Uhr";
+
+// MARK: - Event Main
+
+// The screen title
+"events_screen_title" = "Veranstaltungen";
+// event view next title
+"events_event_view_next_title" = "Nächste Veranstaltungen";
+// event view search title
+"events_event_view_search_title" = "Suchergebnisse";
+// The text for no event
+"events_no_event_title" = "Keine Veranstaltungen gefunden.";
+// The text for no event for today
+"events_no_event_today_subtitle" = "Heute finden keine Veranstaltungen statt.";
+// The text for events for today
+"events_event_subtitle %@" = "Heute finden %@ Veranstaltungen statt.";
+// The text for events with specific date
+"events_event_for_date_subtitle %@" = "Am %1$@ finden %2$@ Veranstaltungen statt.";
+// The text for no events with specific date
+"events_no_event_on_day %@" = "Am %@ finden keine Veranstaltungen statt.";
+// The text for searched events
+"events_event_searched_subtitle %@" = "%@ Veranstaltungen gefunden.";
+// The text the search field placeholder
+"events_search_placeholder" = "Suche nach Veranstaltungen";
+// event main view title
+"events_event_main_view_title" = "Veranstaltungen in Ihrer Nähe";
+// event watchlist view title
+"events_event_watchlist_view_title" = "Merkliste";
+// event back button title
+"events_back_button_title" = "Services";
+
+// MARK: - Event Date Picker
+
+// The title for the picker view cancel button
+"events_picker_title_cancel" = "Abbrechen";
+// The title for the picker view confirm button
+"events_picker_title_confirm" = "Auswählen";
+
+// MARK: - Event Watchlist
+
+// The screen title
+"events_screen_watchlist_title" = "Merkliste";
+// The text for events in watchlist
+"events_event_watchlist_subtitle %@" = "Du hast %1$@ %2$@ auf deiner Liste";
+// The text if count is zero
+"events_count_zero" = "keine";
+// The text if count is one
+"events_count_one" = "eine";
+// The text for event
+"events_event_singular" = "Veranstaltung";
+// The text for events
+"events_event_plural" = "Veranstaltungen";
+
+// MARK: - Event Detail
+
+// The text for bookmark
+"events_bookmark_title" = "Merken";
+// The text for share
+"events_share_title" = "Teilen";
+// The text for calendar
+"events_calendar_title" = "Kalender";
+// The website title
+"events_website_title" = "Webseite:";
+// The route title
+"events_route_title" = "Route berechnen";
+// The text for calendar entry
+"events_calendar_entry_title" = "Kalendereintrag";
+// The text for calendar entry message
+"events_calendar_entry_message" = "Möchten Sie diesen Termin in Ihren Kalender eintragen?";
+// The title for successed calendar entry
+"events_calendar_entry_success_title" = "Fertig";
+// The message for successed calendar entry
+"events_calendar_entry_success_message" = "Der Kalendereintrag wurde erfolgreich erstellt.";
+// The title to forward to the app store
+"events_app_store_forwarding_title" = "Hier gefunden";
+//
+"events_apple_maps" = "Apple Maps";
+//
+"events_google_maps" = "Google Maps";
+
+
+// The alert action title to confirm
+"events_alert_title_confirm" = "OK";

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCAEventCollectionItemViewModel Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/OSCAEventCollectionItemViewModel" class="dashAnchor"></a>
+    <a title="OSCAEventCollectionItemViewModel Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OSCAEventCollectionItemViewModel Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DateCollectionViewCell.html">DateCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventCollectionViewCell.html">EventCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventDetailViewController.html">EventDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventsBookmarkViewController.html">EventsBookmarkViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerView.html">OSCAEventContainerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerViewController.html">OSCAEventContainerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerViewModel.html">OSCAEventContainerViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventMainViewController.html">OSCAEventMainViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventMainViewModel.html">OSCAEventMainViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsFlowCoordinator.html">OSCAEventsFlowCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsUIDIContainer.html">OSCAEventsUIDIContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventMainViewModelError.html">OSCAEventMainViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventMainViewModelState.html">OSCAEventMainViewModelState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12OSCAEventsUI0A27FlowCoordinatorDependenciesP">OSCAEventsFlowCoordinatorDependencies</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventCollectionItemViewModel.html">OSCAEventCollectionItemViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12OSCAEventsUI29OSCAEventMainViewModelActionsV">OSCAEventMainViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUI.html">OSCAEventsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUIConfig.html">OSCAEventsUIConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUIDependencies.html">OSCAEventsUIDependencies</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OSCAEventCollectionItemViewModel</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OSCAEventCollectionItemViewModel</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>view model for an item in the <code>CollectionView</code></p>
+
+<ul>
+<li><code>titleLabel    : OSCAEvent.name</code></li>
+<li><code>dateLabel     : OSCAEvent.startDate, OSCAEvent.endDate, OSCAEvent.isAllDay, OSCAEent.eventStatus</code></li>
+<li><code>distanceLabel : OSCAEvent.location</code></li>
+<li><code>bookmarkButton: isOnWatchlist</code></li>
+<li><code>imageView     : OSCAEvent.image, OSCAEvent.thumbImage</code></li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4nameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4nameSSvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4dateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/date" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4dateSSvp">date</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV8distanceSSvp"></a>
+                    <a name="//apple_ref/swift/Property/distance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV8distanceSSvp">distance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">distance</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV13isOnWatchlistSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOnWatchlist" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV13isOnWatchlistSbvp">isOnWatchlist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isOnWatchlist</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV5imageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV5imageSSvp">image</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4from4withAC0A00C0V_14OSCAEssentials12OSCAGeoPointVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI32OSCAEventCollectionItemViewModelV4from4withAC0A00C0V_14OSCAEssentials12OSCAGeoPointVtcfc">init(from:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">OSCAEvent</span><span class="p">,</span> <span class="n">with</span> <span class="nv">actualPosition</span><span class="p">:</span> <span class="kt">OSCAGeoPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

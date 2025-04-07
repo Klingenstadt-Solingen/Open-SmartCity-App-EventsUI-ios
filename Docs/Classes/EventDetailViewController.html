@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EventDetailViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EventDetailViewController" class="dashAnchor"></a>
+    <a title="EventDetailViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        EventDetailViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DateCollectionViewCell.html">DateCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventCollectionViewCell.html">EventCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventDetailViewController.html">EventDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventsBookmarkViewController.html">EventsBookmarkViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerView.html">OSCAEventContainerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerViewController.html">OSCAEventContainerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventContainerViewModel.html">OSCAEventContainerViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventMainViewController.html">OSCAEventMainViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventMainViewModel.html">OSCAEventMainViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsFlowCoordinator.html">OSCAEventsFlowCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAEventsUIDIContainer.html">OSCAEventsUIDIContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventMainViewModelError.html">OSCAEventMainViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAEventMainViewModelState.html">OSCAEventMainViewModelState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12OSCAEventsUI0A27FlowCoordinatorDependenciesP">OSCAEventsFlowCoordinatorDependencies</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventCollectionItemViewModel.html">OSCAEventCollectionItemViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12OSCAEventsUI29OSCAEventMainViewModelActionsV">OSCAEventMainViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUI.html">OSCAEventsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUIConfig.html">OSCAEventsUIConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAEventsUIDependencies.html">OSCAEventsUIDependencies</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EventDetailViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EventDetailViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">EventDetailViewController</span><span class="p">:</span> <span class="kt">UITextViewDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">EventDetailViewController</span><span class="p">:</span> <span class="kt">MKMapViewDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">EventDetailViewController</span><span class="p">:</span> <span class="kt">Alertable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI25EventDetailViewControllerC04LiveC0a"></a>
+                    <a name="//apple_ref/swift/Alias/LiveEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI25EventDetailViewControllerC04LiveC0a">LiveEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">LiveEvent</span> <span class="o">=</span> <span class="kt">OSCALiveEvent</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)headerImageView"></a>
+                    <a name="//apple_ref/swift/Property/headerImageView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)headerImageView">headerImageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">headerImageView</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)mapView"></a>
+                    <a name="//apple_ref/swift/Property/mapView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)mapView">mapView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)mapContainerView"></a>
+                    <a name="//apple_ref/swift/Property/mapContainerView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)mapContainerView">mapContainerView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">mapContainerView</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)titleLabel"></a>
+                    <a name="//apple_ref/swift/Property/titleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)titleLabel">titleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">titleLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)subtitleLabel"></a>
+                    <a name="//apple_ref/swift/Property/subtitleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)subtitleLabel">subtitleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">subtitleLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)dateLabel"></a>
+                    <a name="//apple_ref/swift/Property/dateLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)dateLabel">dateLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">dateLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)timeLabel"></a>
+                    <a name="//apple_ref/swift/Property/timeLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)timeLabel">timeLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">timeLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)detailTextView"></a>
+                    <a name="//apple_ref/swift/Property/detailTextView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)detailTextView">detailTextView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">detailTextView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)detailTextViewHeight"></a>
+                    <a name="//apple_ref/swift/Property/detailTextViewHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)detailTextViewHeight">detailTextViewHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">detailTextViewHeight</span><span class="p">:</span> <span class="kt">NSLayoutConstraint</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)bookmarkButton"></a>
+                    <a name="//apple_ref/swift/Property/bookmarkButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)bookmarkButton">bookmarkButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">bookmarkButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)categoryLabel"></a>
+                    <a name="//apple_ref/swift/Property/categoryLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)categoryLabel">categoryLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">categoryLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)routeButton"></a>
+                    <a name="//apple_ref/swift/Property/routeButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)routeButton">routeButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">routeButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)closeButton"></a>
+                    <a name="//apple_ref/swift/Property/closeButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(py)closeButton">closeButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">closeButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12OSCAEventsUI25EventDetailViewControllerC5event0A008OSCALiveC0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/event" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12OSCAEventsUI25EventDetailViewControllerC5event0A008OSCALiveC0VSgvp">event</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/EventDetailViewController.html#/s:12OSCAEventsUI25EventDetailViewControllerC04LiveC0a">LiveEvent</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewDidLayoutSubviews"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLayoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewDidLayoutSubviews">viewDidLayoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLayoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)viewWillAppear:">viewWillAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)touchFavourite:"></a>
+                    <a name="//apple_ref/swift/Method/touchFavourite(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAEventsUI@objc(cs)EventDetailViewController(im)touchFavourite:">touchFavourite(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">touchFavourite</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)textViewDidChange:"></a>
+                    <a name="//apple_ref/swift/Method/textViewDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)textViewDidChange:">textViewDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textViewDidChange</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)textView:shouldInteractWithURL:inRange:interaction:"></a>
+                    <a name="//apple_ref/swift/Method/textView(_:shouldInteractWith:in:interaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)textView:shouldInteractWithURL:inRange:interaction:">textView(_:<wbr>shouldInteractWith:<wbr>in:<wbr>interaction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textView</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">,</span> <span class="n">shouldInteractWith</span> <span class="kt">URL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="k">in</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="n">interaction</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">UITextItemInteraction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)mapView:rendererForOverlay:"></a>
+                    <a name="//apple_ref/swift/Method/mapView(_:rendererFor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)mapView:rendererForOverlay:">mapView(_:<wbr>rendererFor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="p">,</span> <span class="n">rendererFor</span> <span class="nv">overlay</span><span class="p">:</span> <span class="kt">MKOverlay</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MKOverlayRenderer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)mapView:viewForAnnotation:"></a>
+                    <a name="//apple_ref/swift/Method/mapView(_:viewFor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAEventsUI@objc(cs)EventDetailViewController(im)mapView:viewForAnnotation:">mapView(_:<wbr>viewFor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="p">,</span> <span class="n">viewFor</span> <span class="nv">annotation</span><span class="p">:</span> <span class="kt">MKAnnotation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MKAnnotationView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
